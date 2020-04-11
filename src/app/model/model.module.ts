@@ -13,6 +13,7 @@ import { RestDataSource } from './rest.datasource'
   providers: [
     ProductRepository,
     { provide: StaticDataSource, useClass: RestDataSource },
+    RestDataSource,
     Cart,
     Order,
     OrderRepository,
